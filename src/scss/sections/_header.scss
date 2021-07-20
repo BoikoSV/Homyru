@@ -1,0 +1,10 @@
+.header__top{
+    background-color: $black-color;
+    min-height: 40px;
+}
+.header__top-inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

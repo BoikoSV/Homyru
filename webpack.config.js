@@ -22,6 +22,7 @@ const config = {
         path: path.resolve(__dirname, 'dist'),
         filename: isDev ? 'js/script.js' : 'js/script-[hash].js',
     },
+    devtool: isDev ? 'source-map' : false,
     module: {
         rules: [
             {

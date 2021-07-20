@@ -1,0 +1,1 @@
+export const menu = document.querySelector('.menu');
