@@ -1,0 +1,119 @@
+.cart{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50px 35px;
+    width: 195px;
+    justify-self: end;
+
+    @media (max-width: 530px) {
+        width: auto;
+        display: block;
+        margin-top: 16px;
+        position: relative;
+    }
+}
+.cart__info{
+
+    @media (max-width: 530px) {
+        position: absolute;
+        top: -9px;
+        left: 14px;
+    }
+}
+.cart__box{
+    grid-column: span 2;
+    background-image: url('../images/background-cart.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+
+    @media (max-width: 530px) {
+        background: none;
+    }
+}
+.cart__comparison{
+    justify-self: end;
+}
+.cart__title{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.cart__box{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+
+    @media (max-width: 530px) {
+        display: block;
+    }
+}
+.cart__box::before{
+    grid-row: span 2;
+    align-self: center;
+    justify-self: center;
+    font-size: 23px;
+}
+.cart__title{
+    align-self: end;
+
+    @media (max-width: 530px) {
+        display: none;
+    }
+}
+.cart__sum{
+
+    @media (max-width: 530px) {
+        display: none;
+    }
+}
+.cart__slash{
+
+    @media (max-width: 530px) {
+        display: none;
+    }
+}
+.cart__count{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cart__count:hover{
+    text-decoration: none;
+}
+.cart__favorite,
+.cart__comparison{
+    align-self: center;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 18px;
+    text-decoration: none;
+    justify-self: start;
+    color: $black-color;
+    border-bottom: 1px dashed $black-color;
+    padding-bottom: 3px;
+    transition: border-color 0.2s;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 530px) {
+        display: none;
+    }
+}
+.cart__comparison{
+    justify-self: end;
+}
+.cart__favorite:hover,
+.cart__comparison:hover{
+    border-color: transparent;
+}
+.cart__favorite-count,
+.cart__comparison-count{
+    color: $links-color;
+    margin-left: 5px;
+}
+.cart__favorite::before,
+.cart__comparison::before{
+    margin-right: 5px;
+    font-size: 14px;
+}

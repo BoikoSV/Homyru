@@ -1,0 +1,121 @@
+.search__text {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 18px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1025px) {
+        display: none;
+    }
+}
+
+.search__text--orange {
+    color: $accent-color;
+    font-weight: 400;
+}
+.search__text--black {
+    color: $black-color;
+    font-size: 16px;
+    font-weight: 300;
+}
+.search::before {
+    font-size: 25px;
+
+    @media (max-width: 1025px) {
+        display: none;
+    }
+}
+
+//grid
+.search {
+    display: grid;
+    grid-template-columns: 32px auto;
+    grid-template-rows: auto auto;
+    column-gap: 7px;
+    row-gap: 12px;
+
+    @media (max-width: 1025px) {
+        display: block;
+    }
+    @media (max-width: 769px) {
+        position: relative;
+    }
+}
+.search__btn {
+    content: "";
+    display: none;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 23px;
+    color: $accent-color;
+    margin-top: 22px;
+    margin-right: 10px;
+
+    @media (max-width: 1025px) {
+        display: block;
+    }
+    @media (max-width: 769px) {
+        display: none;
+    }
+    @media (max-width: 650px) {
+        margin-right: 0;
+        position: absolute;
+        right: 0;
+        top: -9px;
+        display: block;
+    }
+}
+.search::before {
+    align-self: center;
+}
+.search__form {
+    grid-column: span 2;
+    position: relative;
+    align-self: start;
+    max-width: 260px;
+
+    @media (max-width: 1025px) {
+        display: none;
+    }
+    @media (max-width: 769px) {
+        display: block;
+        max-width: 100%;
+    }
+    @media (max-width: 650px) {
+        display: none;
+    }
+}
+.search__input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: $light-grey;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.search__input::placeholder {
+    color: #7f8485;
+    font-weight: 300;
+}
+.search__send-btn {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    width: 58px;
+    padding: 0;
+    border: none;
+    background-color: $accent-color;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}

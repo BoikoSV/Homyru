@@ -12,9 +12,16 @@
         components
 ************************/
 @import 'components/menu';
+@import 'components/region';
+@import 'components/logo';
+@import 'components/contacts';
+@import 'components/search';
+@import 'components/profile';
+@import 'components/cart';
 
 
 /*************************
-        section
+        sections
 *************************/
 @import 'sections/header';
+@import 'sections/header__middle';

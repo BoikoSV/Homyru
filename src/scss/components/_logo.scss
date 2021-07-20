@@ -1,0 +1,14 @@
+.logo__text{
+    color: #818588;
+
+    @media (max-width: 426px) {
+        display: none;
+    }
+}
+.logo__img{
+
+    @media (max-width: 380px) {
+        width: 150px;
+        height: auto;
+    }
+}

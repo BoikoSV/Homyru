@@ -1,0 +1,98 @@
+.contacts{
+    padding-left: 125px;
+
+    @media (max-width: 880px) {
+        padding-left: 0;
+    }
+    @media (max-width: 769px) {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 380px) {
+        grid-template-columns: 1fr;
+    }
+}
+.contacts__callback{
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    font-size: 22px;
+    margin-bottom: 7px;
+    display: block;
+    white-space: nowrap;
+
+    @media (max-width: 380px) {
+        justify-self: center;
+    }
+}
+.contacts__callback::before{
+    content: '';
+    position: absolute;
+    left: -125px;
+    width: 110px;
+    height: 60px;
+    background-image: url('../images/svg/callback.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    @media (max-width: 880px) {
+        display: none;
+    }
+}
+.contacts__callback::after{
+    content: 'Обратный звонок';
+    position: absolute;
+    left: -107px;
+    width: 60px;
+    top: 18px;
+    text-align: center;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+    color: $links-color;
+
+    @media (max-width: 880px) {
+        display: none;
+    }
+}
+.contacts__schedule{
+    font-weight: 300;
+    margin-bottom: 7px;
+    white-space: nowrap;
+    grid-column: 1;
+    grid-row: 2;
+
+    @media (max-width: 380px) {
+        justify-self: center;
+    }
+}
+.contacts__tel-message{
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    white-space: nowrap;
+    justify-self: end;
+
+    @media (max-width: 380px) {
+        justify-self: center;
+    }
+}
+.contacts__messanger{
+    font-size: 20px;
+    margin-right: 7px;
+    font-weight: 300;
+}
+.contacts__email{
+    font-weight: 300;
+    white-space: nowrap;
+    justify-self: end;
+
+    @media (max-width: 380px) {
+        justify-self: center;
+    }
+}
+.contacts__email:hover{
+    text-decoration: none;
+}

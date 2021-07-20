@@ -3,6 +3,9 @@
 *::after{
     box-sizing: border-box;
 }
+html{
+    font-size: 13px;
+}
 body{
     min-width: 320px;
     font-family: Roboto;
@@ -12,4 +15,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+}
+a{
+    color: $links-color;
 }

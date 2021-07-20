@@ -1,0 +1,16 @@
+.profile{
+    font-weight: 300;
+}
+.profile :hover{
+    text-decoration: none;
+}
+.profile__login{
+    margin-right: 5px;
+
+    @media (max-width: 426px) {
+        display: none;
+    }
+}
+.profile__accaunt{
+    white-space: nowrap;
+}
