@@ -20,6 +20,9 @@
 @import 'components/cart';
 @import '~swiper/swiper-bundle.min.css';
 @import 'components/headerBottom';
+@import 'components/news-item';
+@import 'components/hero-slider';
+// @import 'components/section-title;
 
 
 /*************************
@@ -27,3 +30,4 @@
 *************************/
 @import 'sections/header';
 @import 'sections/header__middle';
+@import 'sections/hero';
