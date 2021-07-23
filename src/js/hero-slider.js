@@ -6,8 +6,8 @@ const swiper = new Swiper(slider, {
     slidesPerView: 1,
     speed: 2000,
     navigation: {
-        nextEl: '.hero-slider__next',
-        prevEl: '.hero-slider__prev',
+        nextEl: slider.querySelector('.hero-slider__next'),//'.hero-slider__next',
+        prevEl:  slider.querySelector('.hero-slider__prev'),//'.hero-slider__prev',
       },
     pagination: {
       el: '.swiper-pagination',
