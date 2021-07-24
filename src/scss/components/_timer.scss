@@ -1,0 +1,99 @@
+.timer{
+    display: grid;
+    grid-template-columns: 16px 3px 16px 8px 16px 3px 16px 8px 16px 3px 16px;
+    grid-template-rows: auto auto;
+    row-gap: 3px;
+    grid-template-areas: "day-1 . day-2 dots-1 hour-1 . hour-2 dots-2 minut-1 . minut-2"
+                        "label-day label-day label-day . label-hour label-hour label-hour . label-minut label-minut label-minut";
+  }
+
+  .timer__day-1{
+    grid-area: day-1;
+  }
+  .timer__day-2{
+    grid-area: day-2;
+  }
+  .timer__dots-1{
+    grid-area: dots-1;
+  }
+
+  .timer__hour-1{
+    grid-area: hour-1;
+  }
+  .timer__hour-2{
+    grid-area: hour-2;
+  }
+  .timer__dots-2{
+    grid-area: dots-2;
+  }
+
+  .timer__minut-1{
+    grid-area: minut-1;
+  }
+  .timer__minut-2{
+    grid-area: minut-2;
+  }
+
+  .timer__label-day{
+    grid-area: label-day;
+  }
+  .timer__label-hour{
+    grid-area: label-hour;
+  }
+  .timer__label-minut{
+    grid-area: label-minut;
+  }
+
+
+
+
+.timer__day,
+.timer__hour,
+.timer__minut{
+    background-color: #5e5e5e;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 10px 3px #000;
+    position: relative;
+}
+.timer__day::after,
+.timer__hour::after,
+.timer__minut::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  top: calc(50% - 1px);
+  left: 0;
+  background-color: black;
+  height: 1px;
+  box-shadow: 0px 0px 2px #000;
+}
+
+.timer__label-day,
+.timer__label-hour,
+.timer__label-minut{
+  font-size: 13px;
+  text-align: center;
+  color: #7f8686;
+}
+
+.timer__dots{
+  position: relative;
+}
+.timer__dots::before,
+.timer__dots::after{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #1b1b1b;
+  left: 50%;
+  top: 23%;
+  transform: translateX(-50%);
+  border-radius: 100%;
+}
+.timer__dots::after{
+  top: 57%;
+}
