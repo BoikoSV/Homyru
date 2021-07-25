@@ -9,6 +9,7 @@ html{
 body{
     min-width: 320px;
     font-family: Roboto;
+    min-height: 100vh;
 }
 .container{
     max-width: 1170px;
@@ -18,4 +19,11 @@ body{
 }
 a{
     color: $links-color;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    margin-top: auto;
 }
