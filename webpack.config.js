@@ -19,7 +19,7 @@ function addImagemin(){
 
 const config = {
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         filename: isDev ? 'js/script.js' : 'js/script-[hash].js',
     },
     devtool: isDev ? 'source-map' : false,
